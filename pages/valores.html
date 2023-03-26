@@ -1,0 +1,38 @@
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/calculadora.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>CONVERSOR DE BASES</h1>
+    <table>
+      <tr>
+        <td colspan="5"><input id="result" value=""></td>
+      </tr>
+      <tr>
+        <td><button class="neon" onclick="cal.convertirARomano()">Valor a Romanos</button></td>
+        <td><button class="neon"  onclick="cal.calcularBilletes()">Cantidad en billetes</button></td>
+        <td><button class="ac" onclick="cal.limpiar()" >limpiar</button></td>
+      </tr>
+      </table>
+      <form action="../index.html">
+        <div class="wrapper">
+            <a class="button" href="../pages/index.html">Volver</a>
+        </div>
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
+    </form>
+      <script src="../js/calculadora.js">
+      
+      </script>
+    </body>
+</html>

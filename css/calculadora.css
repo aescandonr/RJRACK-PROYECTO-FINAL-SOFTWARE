@@ -1,0 +1,112 @@
+body{
+    background-color:#242424  ;
+    width:80%;
+    margin:20px auto;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#FFFFFF ;
+    text-align:center;
+    font-size: 500%;
+}
+button{
+    position: relative;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 30% ;
+    outline: none;
+    background-color:#000000;
+    color: #85BAFF;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    color: #FFFFFF;
+}
+.neon:hover{
+    position: relative;
+    display: inline-block;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.neon:hover{
+    background:#7265fc ;
+    box-shadow: 0 0 10px #5323a1, 0 0 40px #5323a1, 0 0 80px #5323a1 ;
+}
+
+table {
+    width: 100%;
+}
+button,input {
+    width: 100%;
+    font-size: 150%;
+
+}
+input{
+    text-align: center;
+    background-color: rgb(227, 227, 227);
+
+}
+.ac {
+    color: red;
+}
+button{
+    cursor: pointer;
+}
+:root {
+    --bg: #ffffff;
+    --color: rgb(1, 35, 129);
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    padding: 1.5rem 0;
+    filter: url('#goo');
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
